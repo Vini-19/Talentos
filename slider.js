@@ -1,4 +1,3 @@
-// Slider automático
 let slideIndex = 0;
 const slides = document.querySelector(".slides");
 const totalSlides = document.querySelectorAll(".slide").length;
@@ -29,3 +28,8 @@ function toggleMenu() {
   const menu = document.getElementById("menu");
   menu.classList.toggle("show");
 }
+
+// Inicializar primera vista
+window.addEventListener("load", () => {
+  showSlide(slideIndex);
+});
