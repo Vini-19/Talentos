@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noticias Destacadas de Fútbol</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER + MENÚ -->
+  <header>
+    <div class="top-bar">
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="logo-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/FIFA_Logo.svg/1200px-FIFA_Logo.svg.png" alt="Logo FIFA" class="logo" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/UEFA_Logo_2013.svg" alt="Logo UEFA" class="logo" />
+      </div>
+    </div>
+
+    <nav id="menu" class="menu-dropdown">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SLIDER DE IMÁGENES -->
+  <div class="slider">
+    <div class="slides">
+      <img src="https://cdn.pixabay.com/photo/2015/03/26/10/04/football-690064_1280.jpg" class="slide" alt="Balón de fútbol" />
+      <img src="https://cdn.pixabay.com/photo/2014/12/11/11/01/football-563443_1280.jpg" class="slide" alt="Jugador con balón" />
+      <img src="https://cdn.pixabay.com/photo/2017/07/31/11/21/football-2557386_1280.jpg" class="slide" alt="Partido de fútbol" />
+    </div>
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+  </div>
+
+  <!-- NOTICIAS -->
+  <div class="container">
+    <div class="card">
+      <a href="https://www.espn.com.mx/futbol/nota/_/id/12204184/messi-y-el-psg-la-pelota-esta-en-la-casa-del-barca" target="_blank" rel="noopener noreferrer">
+        <img src="https://a.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricket-logos%2Fbarcelona.png" alt="Messi y Barça" />
+        <div class="card-title">Messi y el Barça: ¿Vuelve a casa?</div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.bbc.com/mundo/deportes-66295444" target="_blank" rel="noopener noreferrer">
+        <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/6BAF/production/_125434596_gettyimages-1244100916.jpg" alt="Cristiano Ronaldo" />
+        <div class="card-title">Cristiano Ronaldo y su futuro en el fútbol</div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/qatar2022/news/" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.fifa.com/image/upload/t_l4/cvlhs7nsqpjpu9ywdh1f.jpg" alt="Qatar 2022" />
+        <div class="card-title">Qatar 2022: La emoción de la Copa Mundial</div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.uefa.com/uefachampionsleague/news/" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/UEFA_Champions_League_logo_2.svg" alt="Champions League" />
+        <div class="card-title">UEFA Champions League: La batalla por el título</div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.goal.com/es/noticias" target="_blank" rel="noopener noreferrer">
+        <img src="https://images.goal.com/photo/2023/01/21/10480132/premier-league-celebration-foto-gol-bueno.jpg" alt="Premier League" />
+        <div class="card-title">Premier League: Luchas por la cima</div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.futbolred.com/" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.futbolred.com/files/article_main/files/crop/uploads/2023/01/11/63bfce5d84a7f.r_1673478986606.2-3-696x392.jpeg" alt="Liga local" />
+        <div class="card-title">Ligas locales: Talentos emergentes</div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.fifa.com/image/upload/t_l4/v1659706690/qatar-2022-4/official-qatar-2022-world-cup-logo_f1lnk9.jpg" alt="Qatar 2022 logo" />
+        <div class="card-title">Qatar 2022: Resumen y estadísticas</div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.concacaf.com/es/" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/CONCACAF_logo.svg/2560px-CONCACAF_logo.svg.png" alt="CONCACAF" />
+        <div class="card-title">CONCACAF: Competencias regionales</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="slider.js"></script>
+
+</body>
+</html>
